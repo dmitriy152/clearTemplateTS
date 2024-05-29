@@ -1,0 +1,120 @@
+//wrapper
+.container {
+	width: 100%;
+	overflow: hidden;
+}
+.wrapper {
+	max-width: 1120px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+	@include break(xl){
+		padding: 0 64px;
+	}
+	@include break(lg) {
+		padding: 0 48px;
+	}
+	@include break(sm){
+		padding: 0 16px;
+	}
+}
+.wrapper-mounted {
+}
+//txt-components
+
+//btns
+.btn-yellow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px 32px;
+	background-color: $primary-yellow;
+	border-radius: 8px;
+	transition: $transition-def;
+	&:hover {
+		background-color: $primary-yellow-hover;
+	}
+	&:active {
+		background-color: $primary-yellow-active;
+	}
+	&:disabled {
+		background-color: $primary-disabled-bg;
+		span {
+			color: $primary-disabled-color;
+		}
+	}
+	span {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 120%;
+		color: $primary-blue-dark;
+	}
+	.arrow-right {
+		width: 18px;
+		height: 14px;
+		margin: 0 0 0 16px;
+	}
+}
+.btn-grey {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px 32px;
+	background-color: $primary-grey;
+	border-radius: 8px;
+	transition: $transition-def;
+	border: 1px solid rgba($color: $primary-blue-dark, $alpha: 0.35);
+	&:hover {
+		background-color: $primary-grey-hover;
+	}
+	&:active {
+		background-color: $primary-grey-active;
+	}
+	&:disabled {
+		background-color: $primary-disabled-bg;
+		span {
+			color: $primary-disabled-color;
+		}
+	}
+	span {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 120%;
+		color: $primary-blue-dark;
+	}
+	.arrow-right {
+		width: 18px;
+		height: 14px;
+		margin: 0 0 0 16px;
+	}
+}
+.btn-lightblue {
+	padding: 16px 32px;
+	background-color: $primary-lightblue;
+	border-radius: 4px;
+	transition: $transition-def;
+	span {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 110%;
+		letter-spacing: 0%;
+		color: $primary-blue-dark;
+	}
+	.arrow-right {
+		width: 18px;
+		height: 14px;
+		margin: 0 0 0 16px;
+	}
+	&:hover {
+		background-color: $primary-lightblue-hover;
+	}
+	&:active {
+		background-color: $primary-lightblue-active;
+	}
+	&:disabled {
+		background-color: $primary-disabled-bg;
+		span {
+			color: $primary-disabled-color;
+		}
+	}
+}

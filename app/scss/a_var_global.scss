@@ -1,0 +1,35 @@
+//color
+//primary
+$primary-white: #fff;
+$primary-black: #1D2023;
+$primary-blue: #2F67F8;
+$primary-blue-hover: #1F53D7;
+$primary-blue-dark: #181D51;
+
+$primary-lightblue: #CEE5FF;
+$primary-lightblue-hover: #A1CDFF;
+$primary-lightblue-active: #5795DD;
+
+$primary-grey: rgba(#181D51, 0.05);
+$primary-grey-hover: rgba(#181D51, 0.1);
+$primary-grey-active: rgba(#181D51, 0.25);
+
+$primary-yellow: #FFCA42;
+$primary-yellow-hover: #FFE071;
+$primary-yellow-active: #F1C012;
+
+$primary-disabled-bg: #EDEDED;
+$primary-disabled-color: #999999;
+
+$primary-error: #F62434;
+$bg: #ECF2F8;
+
+//secondary
+
+
+//btn
+
+//transition
+$transition-def: all 0.15s ease-in-out;
+$transition-middle: all 0.3s ease-in-out;
+$transition-slow: all 1s ease-in-out;

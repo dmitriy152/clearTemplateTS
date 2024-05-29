@@ -1,0 +1,8 @@
+mixin breadcrumb-grey_mix(arr)
+    .breadcrumb-grey
+        .breadcrumb-grey__wrapper.wrapper
+            ul.breadcrumb-grey__list
+                each item, href in arr
+                    li.breadcrumb-grey__item
+                        a.breadcrumb-grey__link(href=href)
+                            span.breadcrumb-grey__link-value=item

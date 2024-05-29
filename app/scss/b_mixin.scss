@@ -1,0 +1,26 @@
+//mixin.scss
+@use "sass:math";
+
+//@media
+$breakpoints: (
+  sx: 550px,
+  sm: 767px,
+  md: 992px,
+  lg: 1023px,
+  xl: 1279px,
+  xx: 1919px
+);
+@mixin break($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+//inputs 
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
